@@ -22,7 +22,7 @@
       "author": {
         "name": "TencentCloudBase"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/cloudbase-skills/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/cloudbase-skills/icon.png",
       "category": "developer-tools",
       "keywords": [
         "cloudbase",
@@ -40,7 +40,7 @@
         "en": "Code Security Protection",
         "zh-CN": "代码安全防护"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/mimosa/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/mimosa/icon.png",
       "description": "Local-first security guardrails for ZCode with pre-write hooks, end-of-turn review, Git gates, commands, a security-scan skill, and an optional MCP server for sealed deep scans.",
       "description_i18n": {
         "en": "Local-first security guardrails for ZCode with pre-write hooks, end-of-turn review, Git gates, commands, a security-scan skill, and an optional MCP server for sealed deep scans.",
@@ -72,7 +72,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/github/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/github/icon.png",
       "category": "developer-tools",
       "keywords": [
         "git",
@@ -99,7 +99,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/video-agent/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/video-agent/icon.png",
       "category": "productivity",
       "keywords": [
         "video-editing",
@@ -122,7 +122,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/video2code/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/video2code/icon.png",
       "category": "productivity",
       "keywords": [
         "video2code",
@@ -149,7 +149,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/accounting-reporting/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/accounting-reporting/icon.png",
       "category": "finance",
       "keywords": [
         "accounting",
@@ -178,7 +178,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/fixed-income-research/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/fixed-income-research/icon.png",
       "category": "finance",
       "keywords": [
         "fixed-income",
@@ -207,7 +207,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/corporate-client-acquisition/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/corporate-client-acquisition/icon.png",
       "category": "finance",
       "keywords": [
         "corporate-banking",
@@ -236,7 +236,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/trade-calculator/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/trade-calculator/icon.png",
       "category": "finance",
       "keywords": [
         "m-and-a",
@@ -265,7 +265,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/fund-research/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/fund-research/icon.png",
       "category": "finance",
       "keywords": [
         "funds",
@@ -294,7 +294,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/macro-strategy/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/macro-strategy/icon.png",
       "category": "finance",
       "keywords": [
         "macro",
@@ -323,7 +323,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/business-analysis/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/business-analysis/icon.png",
       "category": "finance",
       "keywords": [
         "fpa",
@@ -352,7 +352,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/corporate-due-diligence/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/corporate-due-diligence/icon.png",
       "category": "finance",
       "keywords": [
         "due-diligence",
@@ -381,7 +381,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/portfolio-tracking/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/portfolio-tracking/icon.png",
       "category": "finance",
       "keywords": [
         "portfolio-monitoring",
@@ -410,7 +410,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/equity-research/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/equity-research/icon.png",
       "category": "finance",
       "keywords": [
         "equity-research",
@@ -433,7 +433,7 @@
         "name": "Z.ai",
         "url": "https://z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/gitlab/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/gitlab/icon.png",
       "category": "developer-tools",
       "keywords": [
         "gitlab",
@@ -452,7 +452,7 @@
         "zh-CN": "阿里云 CLI"
       },
       "source": "./plugins/alibaba-cloud-cli",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/alibaba-cloud-cli/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/alibaba-cloud-cli/icon.png",
       "description": "Alibaba Cloud CLI workflows for credential setup, profile checks, and safe cloud resource operations.",
       "description_i18n": {
         "en": "Alibaba Cloud CLI workflows for credential setup, profile checks, and safe cloud resource operations.",
@@ -482,7 +482,7 @@
         "zh-CN": "飞书 CLI"
       },
       "source": "./plugins/lark-cli",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/lark-cli/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/lark-cli/icon.png",
       "description": "Lark CLI workflows for docs, sheets, Base, calendar, messaging, and other SaaS resources with guided setup and OAuth login.",
       "description_i18n": {
         "en": "Lark CLI workflows for docs, sheets, Base, calendar, messaging, and other SaaS resources with guided setup and OAuth login.",
@@ -513,7 +513,7 @@
         "zh-CN": "腾讯会议 CLI"
       },
       "source": "./plugins/tencent-meeting-cli",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/tencent-meeting-cli/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/tencent-meeting-cli/icon.png",
       "description": "Tencent Meeting CLI workflows with OAuth2 setup, meeting management, recordings, and attendee reports.",
       "description_i18n": {
         "en": "Tencent Meeting CLI workflows with OAuth2 setup, meeting management, recordings, and attendee reports.",
@@ -564,7 +564,7 @@
         "tasks"
       ],
       "category": "productivity",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/dingtalk-cli/icon.png"
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/dingtalk-cli/icon.png"
     },
     {
       "name": "wecom-cli",
@@ -598,7 +598,7 @@
         "todo"
       ],
       "category": "productivity",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/wecom-cli/icon.png"
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/wecom-cli/icon.png"
     },
     {
       "name": "hexin",
@@ -625,7 +625,7 @@
       "requiresPaidPlan": true,
       "source": "./plugins/hexin",
       "category": "finance",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/hexin/icon.png"
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/hexin/icon.png"
     },
     {
       "name": "wind",
@@ -652,7 +652,7 @@
       "requiresPaidPlan": true,
       "source": "./plugins/wind",
       "category": "finance",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/wind/icon.png"
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/wind/icon.png"
     },
     {
       "name": "tianyancha",
@@ -679,7 +679,7 @@
       "requiresPaidPlan": true,
       "source": "./plugins/tianyancha",
       "category": "finance",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/tianyancha/icon.png"
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/tianyancha/icon.png"
     },
     {
       "name": "finance-search",
@@ -706,7 +706,7 @@
       "requiresPaidPlan": true,
       "source": "./plugins/finance-search",
       "category": "finance",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/finance-search/icon.png"
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/finance-search/icon.png"
     },
     {
       "name": "obsidian",
@@ -739,7 +739,7 @@
         "excalidraw",
         "visualization"
       ],
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/obsidian/icon.png"
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/obsidian/icon.png"
     },
     {
       "name": "hyper3d-rodin",
@@ -771,7 +771,7 @@
       ],
       "source": "./plugins/hyper3d-rodin",
       "category": "developer-tools",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/hyper3d-rodin/icon.png"
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/hyper3d-rodin/icon.png"
     },
     {
       "name": "zcode-mcp-app-dev",
@@ -786,7 +786,7 @@
       },
       "source": "./plugins/zcode-mcp-app-dev",
       "category": "developer-tools",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/zcode-mcp-app-dev/icon.png"
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/zcode-mcp-app-dev/icon.png"
     },
     {
       "name": "blender",
@@ -807,7 +807,7 @@
       "author": {
         "name": "ZCode"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/blender/icon.png"
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/blender/icon.png"
     },
     {
       "name": "excalidraw",
@@ -828,7 +828,7 @@
       "author": {
         "name": "zcoder"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/excalidraw/icon.png"
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/excalidraw/icon.png"
     },
     {
       "name": "openpencil",
@@ -849,11 +849,11 @@
       "author": {
         "name": "zcoder"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/openpencil/icon.png"
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/openpencil/icon.png"
     },
     {
       "name": "photocraft",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/photocraft/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/photocraft/icon.png",
       "source": "./external_plugins/photocraft",
       "componentTypes": ["ui"],
       "displayName": "PhotoCraft",
@@ -880,7 +880,7 @@
     },
     {
       "name": "vectorcraft",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/vectorcraft/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/vectorcraft/icon.png",
       "source": "./external_plugins/vectorcraft",
       "componentTypes": ["ui"],
       "displayName": "VectorCraft",
@@ -907,7 +907,7 @@
     },
     {
       "name": "pdfcraft",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/pdfcraft/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/pdfcraft/icon.png",
       "source": "./external_plugins/pdfcraft",
       "componentTypes": ["ui"],
       "displayName": "PdfCraft",
@@ -934,7 +934,7 @@
     },
     {
       "name": "designcraft",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/designcraft/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/designcraft/icon.png",
       "source": "./external_plugins/designcraft",
       "componentTypes": ["ui"],
       "displayName": "DesignCraft",
@@ -961,7 +961,7 @@
     },
     {
       "name": "wordcraft",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/wordcraft/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/wordcraft/icon.png",
       "source": "./external_plugins/wordcraft",
       "componentTypes": ["ui"],
       "displayName": "WordCraft",
@@ -988,7 +988,7 @@
     },
     {
       "name": "gridcraft",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/gridcraft/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/gridcraft/icon.png",
       "source": "./external_plugins/gridcraft",
       "componentTypes": ["ui"],
       "displayName": "GridCraft",
@@ -1015,7 +1015,7 @@
     },
     {
       "name": "deckcraft",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/deckcraft/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/deckcraft/icon.png",
       "source": "./external_plugins/deckcraft",
       "componentTypes": ["ui"],
       "displayName": "DeckCraft",
@@ -1042,7 +1042,7 @@
     },
     {
       "name": "cadcraft",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/cadcraft/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/cadcraft/icon.png",
       "source": "./external_plugins/cadcraft",
       "componentTypes": ["ui"],
       "displayName": "CADCraft",
@@ -1069,7 +1069,7 @@
     },
     {
       "name": "soundcraft",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/soundcraft/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/soundcraft/icon.png",
       "source": "./external_plugins/soundcraft",
       "componentTypes": ["ui"],
       "displayName": "SoundCraft",
@@ -1112,7 +1112,7 @@
         "name": "VAST",
         "url": "https://www.tripo3d.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/tripo-3d/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/tripo-3d/icon.png",
       "category": "productivity",
       "keywords": [
         "3d",
@@ -1154,7 +1154,7 @@
         "url": "https://github.com/Kevinzzz6"
       },
       "category": "developer-tools",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/zcode-context/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/zcode-context/icon.png",
       "keywords": [
         "context",
         "tokens",
@@ -1165,7 +1165,7 @@
     },
     {
       "name": "jupyter-notebook",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/jupyter-notebook/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/jupyter-notebook/icon.png",
       "componentTypes": [
         "ui"
       ],
@@ -1188,7 +1188,7 @@
     },
     {
       "name": "typst-workbench",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/typst-workbench/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/typst-workbench/icon.png",
       "componentTypes": [
         "ui"
       ],
@@ -1211,7 +1211,7 @@
     },
     {
       "name": "zotero",
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/zotero/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/zotero/icon.png",
       "componentTypes": [
         "ui"
       ],
@@ -1245,7 +1245,7 @@
       "author": {
         "name": "Z.ai"
       },
-      "icon": "https://cdn-zcode.z.ai/zcode/official-plugin/assets/unreal-engine/icon.png",
+      "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/unreal-engine/icon.png",
       "category": "developer-tools",
       "keywords": [
         "unreal-engine",
