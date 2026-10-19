@@ -1,38 +1,32 @@
-# 同花顺（hexin）
+# 公开行情（A股·港股·美股）（hexin）
 
 [English](./README.md)
 
-同花顺股票、海外股票、指数、基金与债券数据 MCP 服务。本插件只封装远程 MCP，不提供命令、技能、Agent 或 Hook。
+A股/港股/美股实时行情快照 MCP 服务，直连公开行情接口，免账号。本插件只封装 MCP 服务，不提供命令、技能、Agent 或 Hook。
 
 ## 使用
 
-1. 在 ZCode 插件管理器中安装并启用「同花顺」。
+1. 在插件管理器中安装并启用「公开行情（A股·港股·美股）」。
 2. 在会话中确认下列 MCP 工具已加载，然后用自然语言提出查询。例如：
 
-> 使用同花顺查询贵州茅台最近可用的股价，注明数据日期和来源。
+> 用公开行情查一下贵州茅台和腾讯控股的最新价与涨跌幅，注明数据时间与来源。
 
-Agent 应从当前会话发现的工具中选择对应服务，按工具 schema 传参；不应猜测工具名。服务命名空间为 `plugin:hexin:<server-key>`。本插件没有斜杠命令。
+Agent 应从当前会话发现的工具中选择对应服务，按工具 schema 传参，不猜测工具名。服务命名空间为 `plugin:hexin:quotes`。本插件没有斜杠命令。
 
-## MCP 服务
+## MCP 工具
 
-| Server key | 网关路由标识 |
+| 工具 | 返回 |
 | --- | --- |
-| `hexin-stock` | `finance_hexin_stock` |
-| `hexin-global-stock` | `finance_hexin_global_stock` |
-| `hexin-index` | `finance_hexin_index` |
-| `hexin-fund` | `finance_hexin_fund` |
-| `hexin-bond` | `finance_hexin_bond` |
+| `realtime_quote` | 现价、昨收、今开、涨跌、涨跌幅、最高最低、成交量额、换手率 |
 
-配置以 [`.mcp.json`](./.mcp.json) 的 `mcpServers` 为准，ZCode 自动发现插件根目录下的此文件。所有服务使用远程 HTTP，地址前缀为 `${ZCODE_BASE_URL}/api/v1/mcp/server/`。
+## 数据来源与边界
 
-## 认证与权限
+- 数据来自公开行情接口 `qt.gtimg.cn`，**不是同花顺 iFinD 官方数据**：字段口径、延迟与限流由接口方决定。
+- 上游同名版本指向 Z.ai 网关并声明 `auth.type = zcode_official`，没有 Z.ai 账号时每个调用都会被服务端以 JSON-RPC 1006 拒绝；本版本改为本地直连公开接口，**免账号、免套餐**。
+- 价格未做复权处理；每个结果都带 `source` 与 `fetchedAt`，取不到数据时如实返回错误而不是补数。
+- 版本 0.2.0 起为本实现。公开行情（A股·港股·美股） 的显示名已按实际数据源命名。
 
-需要 ZCode 登录态及对应付费服务权限（`requiresPaidPlan: true`）。宿主通过 `auth: {type: zcode_official, provider: jwt_token}` 注入认证，无须配置数据商 API key、token 或账号。
+## 运行前提
 
-如果工具未加载，先检查插件是否启用；如果认证或权限失败，检查登录态与套餐权限。查询失败时明确报告错误，不编造数据。
+服务是零依赖的 Node ESM 脚本（`mcp/server.mjs`），只用全局 `fetch`，插件包不含 `node_modules`；要求 `node` 在 PATH 上（与本仓库 `mimosa` 插件同一前置条件）。配置以 [`.mcp.json`](./.mcp.json) 为准，ZCode 自动发现插件根目录下的此文件。
 
-## 范围与副作用
-
-插件自身不运行本地程序、不写文件、不安装依赖。查询通过 ZCode 网关发送到远程服务；插件没有直连数据商的端点，也不携带凭据。
-
-现有金融业务插件仍保留各自的 MCP。与这些插件同时启用时，同一数据源可能以不同插件命名空间重复出现，按需启用即可。

@@ -1,35 +1,32 @@
-# Financial Aggregated Search (finance-search)
+# Financial News Search (finance-search)
 
-[简体中文](./README_CN.md)
+[中文](./README_CN.md)
 
-MCP services for SEC EDGAR filing search and financial web and news search. This plugin only wraps remote MCP services; it contains no commands, skills, agents, or hooks.
+Chinese financial news search served locally from the public Eastmoney search endpoint: title, summary, time, media and source link, no account required.
 
 ## Usage
 
-1. Install and enable **金融聚合搜索 / Financial Aggregated Search** in the ZCode plugin manager.
-2. Confirm that the MCP tools below are loaded in your session, then ask a natural-language question. For example:
+1. Install and enable **Financial News Search** in the plugin manager.
+2. Confirm the MCP tools below are loaded in the session, then ask in natural language, e.g.:
 
-> Find Apple’s latest 10-K filing and provide the filing date and SEC source link.
+> Search recent news for Moutai share buybacks and list titles, times and links.
 
-Agents should select the service from tools discovered in the current session and follow its tool schema instead of guessing tool names. The server namespace is `plugin:finance-search:<server-key>`. This plugin has no slash commands.
+The agent should pick services from what the current session discovers and pass arguments per tool schema. Namespace: `plugin:finance-search:finance-news`. There are no slash commands.
 
-## MCP services
+## MCP tools
 
-| Server key | Gateway route identifier |
+| Tool | Returns |
 | --- | --- |
-| `sec-search` | `finance_sec_search` |
-| `finance-search` | `finance_search` |
+| `search_news` | title, summary (240 chars), publish time, media name, original article link |
 
-The `mcpServers` field in [`.mcp.json`](./.mcp.json) is authoritative. ZCode automatically discovers this file at the plugin root. All services use remote HTTP with the URL prefix `${ZCODE_BASE_URL}/api/v1/mcp/server/`.
+## Data source and limits
 
-## Authentication and permissions
+- Data comes from the public search endpoint `so.eastmoney.com`; it is not an authorized feed and may rate-limit or change shape.
+- The endpoint wraps responses in jsonp; the client unwraps `(...)` and reports an honest error instead of returning empty results.
+- The upstream version required a Z.ai account; this one requires neither an account nor a plan.
+- This implementation ships in version 0.2.0; the display name now matches the actual source.
 
-A ZCode login and the applicable paid service entitlement are required (`requiresPaidPlan: true`). The host injects authentication through `auth: {type: zcode_official, provider: jwt_token}`. No vendor API key, token, or account needs to be configured.
+## Runtime requirement
 
-If tools are missing, check that the plugin is enabled. If authentication or authorization fails, check your login and plan permissions. Report query errors explicitly instead of inventing data.
+The server is a dependency-free Node ESM script (`mcp/server.mjs`) that uses only global `fetch`, so the package carries no `node_modules`; `node` must be on PATH (the same prerequisite as the `mimosa` plugin). Configuration lives in [`.mcp.json`](./.mcp.json), which ZCode discovers at the plugin root.
 
-## Scope and side effects
-
-The plugin itself runs no local programs, writes no files, and installs no dependencies. Queries are sent to remote services through the ZCode gateway; the plugin contains neither direct vendor endpoints nor credentials.
-
-Existing financial workflow plugins retain their own MCP declarations. Enabling them alongside this plugin may expose the same data source under different plugin namespaces; enable plugins as needed.

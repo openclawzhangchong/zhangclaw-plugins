@@ -602,108 +602,112 @@
     },
     {
       "name": "hexin",
-      "description": "MCP services for RoyalFlush iFinD stock, global stock, index, fund, and bond data.",
+      "description": "Realtime quote snapshots for A-share, HK and US symbols from public endpoints, no account required.",
       "description_i18n": {
-        "en": "MCP services for RoyalFlush iFinD stock, global stock, index, fund, and bond data.",
-        "zh-CN": "同花顺股票、海外股票、指数、基金与债券数据 MCP 服务。"
+        "en": "Realtime quote snapshots for A-share, HK and US symbols from public endpoints, no account required.",
+        "zh-CN": "直连公开行情接口返回 A股/港股/美股实时快照，免账号。数据源非官方授权，可能延迟或限流。"
       },
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
-        "name": "Z.ai",
-        "url": "https://z.ai"
+        "name": "张翀18596950010",
+        "url": "https://github.com/openclawzhangchong/zhangclaw"
       },
       "keywords": [
         "hexin",
         "finance",
-        "mcp"
+        "mcp",
+        "public-data",
+        "no-auth"
       ],
-      "displayName": "同花顺",
+      "displayName": "公开行情（A股·港股·美股）",
       "displayName_i18n": {
-        "en": "RoyalFlush iFinD",
-        "zh-CN": "同花顺"
+        "en": "Public Quotes (CN/HK/US)",
+        "zh-CN": "公开行情（A股·港股·美股）"
       },
-      "requiresPaidPlan": true,
       "source": "./plugins/hexin",
       "category": "finance",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/hexin/icon.png"
     },
     {
       "name": "wind",
-      "description": "MCP services for Wind stock, global stock, index, fund, bond, economic, and document data.",
+      "description": "Index snapshots, daily k-lines and market ranking from public endpoints, no account required.",
       "description_i18n": {
-        "en": "MCP services for Wind stock, global stock, index, fund, bond, economic, and document data.",
-        "zh-CN": "万得股票、海外股票、指数、基金、债券、宏观经济与公告研报数据 MCP 服务。"
+        "en": "Index snapshots, daily k-lines and market ranking from public endpoints, no account required.",
+        "zh-CN": "指数快照、日 K 线与市场榜单，直连公开接口，免账号。数据源非官方授权。"
       },
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
-        "name": "Z.ai",
-        "url": "https://z.ai"
+        "name": "张翀18596950010",
+        "url": "https://github.com/openclawzhangchong/zhangclaw"
       },
       "keywords": [
         "wind",
         "finance",
-        "mcp"
+        "mcp",
+        "public-data",
+        "no-auth"
       ],
-      "displayName": "Wind 万得",
+      "displayName": "市场数据（指数·K线·榜单）",
       "displayName_i18n": {
-        "en": "Wind",
-        "zh-CN": "Wind 万得"
+        "en": "Market Data (Index · K-line · Ranking)",
+        "zh-CN": "市场数据（指数·K线·榜单）"
       },
-      "requiresPaidPlan": true,
       "source": "./plugins/wind",
       "category": "finance",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/wind/icon.png"
     },
     {
       "name": "tianyancha",
-      "description": "MCP service for Tianyancha company information queries.",
+      "description": "Search SSE/SZSE/BSE disclosure announcements (cninfo) with PDF links, no account required.",
       "description_i18n": {
-        "en": "MCP service for Tianyancha company information queries.",
-        "zh-CN": "天眼查企业信息查询 MCP 服务。"
+        "en": "Search SSE/SZSE/BSE disclosure announcements (cninfo) with PDF links, no account required.",
+        "zh-CN": "检索沪深北交易所指定披露平台（巨潮资讯）的公告，返回标题、日期与 PDF 直链，免账号。不含工商登记与股权穿透数据。"
       },
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
-        "name": "Z.ai",
-        "url": "https://z.ai"
+        "name": "张翀18596950010",
+        "url": "https://github.com/openclawzhangchong/zhangclaw"
       },
       "keywords": [
         "tianyancha",
         "finance",
-        "mcp"
+        "mcp",
+        "public-data",
+        "no-auth"
       ],
-      "displayName": "天眼查",
+      "displayName": "上市公司公告检索",
       "displayName_i18n": {
-        "en": "Tianyancha",
-        "zh-CN": "天眼查"
+        "en": "Listed-company Announcements",
+        "zh-CN": "上市公司公告检索"
       },
-      "requiresPaidPlan": true,
       "source": "./plugins/tianyancha",
       "category": "finance",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/tianyancha/icon.png"
     },
     {
       "name": "finance-search",
-      "description": "MCP services for SEC EDGAR filing search and financial web and news search.",
+      "description": "Search Chinese financial news with titles, summaries and source links, no account required.",
       "description_i18n": {
-        "en": "MCP services for SEC EDGAR filing search and financial web and news search.",
-        "zh-CN": "SEC EDGAR 文件检索与财经网页、新闻搜索 MCP 服务。"
+        "en": "Search Chinese financial news with titles, summaries and source links, no account required.",
+        "zh-CN": "搜索中文财经资讯，返回标题、摘要、发布时间、媒体与原文链接，免账号。数据源为公开搜索接口。"
       },
-      "version": "0.1.0",
+      "version": "0.2.0",
       "author": {
-        "name": "Z.ai",
-        "url": "https://z.ai"
+        "name": "张翀18596950010",
+        "url": "https://github.com/openclawzhangchong/zhangclaw"
       },
       "keywords": [
         "finance-search",
         "finance",
-        "mcp"
+        "mcp",
+        "public-data",
+        "no-auth"
       ],
-      "displayName": "金融聚合搜索",
+      "displayName": "财经资讯搜索",
       "displayName_i18n": {
-        "en": "Financial Aggregated Search",
-        "zh-CN": "金融聚合搜索"
+        "en": "Financial News Search",
+        "zh-CN": "财经资讯搜索"
       },
-      "requiresPaidPlan": true,
       "source": "./plugins/finance-search",
       "category": "finance",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/finance-search/icon.png"
@@ -790,7 +794,9 @@
     },
     {
       "name": "blender",
-      "componentTypes": ["ui"],
+      "componentTypes": [
+        "ui"
+      ],
       "displayName": "Blender",
       "displayName_i18n": {
         "en": "Blender",
@@ -811,7 +817,9 @@
     },
     {
       "name": "excalidraw",
-      "componentTypes": ["ui"],
+      "componentTypes": [
+        "ui"
+      ],
       "displayName": "Excalidraw",
       "displayName_i18n": {
         "en": "Excalidraw",
@@ -832,7 +840,9 @@
     },
     {
       "name": "openpencil",
-      "componentTypes": ["ui"],
+      "componentTypes": [
+        "ui"
+      ],
       "displayName": "OpenPencil",
       "displayName_i18n": {
         "en": "OpenPencil",
@@ -855,7 +865,9 @@
       "name": "photocraft",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/photocraft/icon.png",
       "source": "./external_plugins/photocraft",
-      "componentTypes": ["ui"],
+      "componentTypes": [
+        "ui"
+      ],
       "displayName": "PhotoCraft",
       "displayName_i18n": {
         "en": "PhotoCraft",
@@ -882,7 +894,9 @@
       "name": "vectorcraft",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/vectorcraft/icon.png",
       "source": "./external_plugins/vectorcraft",
-      "componentTypes": ["ui"],
+      "componentTypes": [
+        "ui"
+      ],
       "displayName": "VectorCraft",
       "displayName_i18n": {
         "en": "VectorCraft",
@@ -909,7 +923,9 @@
       "name": "pdfcraft",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/pdfcraft/icon.png",
       "source": "./external_plugins/pdfcraft",
-      "componentTypes": ["ui"],
+      "componentTypes": [
+        "ui"
+      ],
       "displayName": "PdfCraft",
       "displayName_i18n": {
         "en": "PdfCraft",
@@ -936,7 +952,9 @@
       "name": "designcraft",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/designcraft/icon.png",
       "source": "./external_plugins/designcraft",
-      "componentTypes": ["ui"],
+      "componentTypes": [
+        "ui"
+      ],
       "displayName": "DesignCraft",
       "displayName_i18n": {
         "en": "DesignCraft",
@@ -963,7 +981,9 @@
       "name": "wordcraft",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/wordcraft/icon.png",
       "source": "./external_plugins/wordcraft",
-      "componentTypes": ["ui"],
+      "componentTypes": [
+        "ui"
+      ],
       "displayName": "WordCraft",
       "displayName_i18n": {
         "en": "WordCraft",
@@ -990,7 +1010,9 @@
       "name": "gridcraft",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/gridcraft/icon.png",
       "source": "./external_plugins/gridcraft",
-      "componentTypes": ["ui"],
+      "componentTypes": [
+        "ui"
+      ],
       "displayName": "GridCraft",
       "displayName_i18n": {
         "en": "GridCraft",
@@ -1017,7 +1039,9 @@
       "name": "deckcraft",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/deckcraft/icon.png",
       "source": "./external_plugins/deckcraft",
-      "componentTypes": ["ui"],
+      "componentTypes": [
+        "ui"
+      ],
       "displayName": "DeckCraft",
       "displayName_i18n": {
         "en": "DeckCraft",
@@ -1044,7 +1068,9 @@
       "name": "cadcraft",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/cadcraft/icon.png",
       "source": "./external_plugins/cadcraft",
-      "componentTypes": ["ui"],
+      "componentTypes": [
+        "ui"
+      ],
       "displayName": "CADCraft",
       "displayName_i18n": {
         "en": "CADCraft",
@@ -1071,7 +1097,9 @@
       "name": "soundcraft",
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/soundcraft/icon.png",
       "source": "./external_plugins/soundcraft",
-      "componentTypes": ["ui"],
+      "componentTypes": [
+        "ui"
+      ],
       "displayName": "SoundCraft",
       "displayName_i18n": {
         "en": "SoundCraft",

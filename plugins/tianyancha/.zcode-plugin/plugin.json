@@ -1,24 +1,25 @@
 {
   "name": "tianyancha",
-  "description": "MCP service for Tianyancha company information queries.",
+  "description": "Search SSE/SZSE/BSE disclosure announcements (cninfo) with PDF links, no account required.",
   "description_i18n": {
-    "en": "MCP service for Tianyancha company information queries.",
-    "zh-CN": "天眼查企业信息查询 MCP 服务。"
+    "en": "Search SSE/SZSE/BSE disclosure announcements (cninfo) with PDF links, no account required.",
+    "zh-CN": "检索沪深北交易所指定披露平台（巨潮资讯）的公告，返回标题、日期与 PDF 直链，免账号。不含工商登记与股权穿透数据。"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
-    "name": "Z.ai",
-    "url": "https://z.ai"
+    "name": "张翀18596950010",
+    "url": "https://github.com/openclawzhangchong/zhangclaw"
   },
   "keywords": [
     "tianyancha",
     "finance",
-    "mcp"
+    "mcp",
+    "public-data",
+    "no-auth"
   ],
-  "displayName": "天眼查",
+  "displayName": "上市公司公告检索",
   "displayName_i18n": {
-    "en": "Tianyancha",
-    "zh-CN": "天眼查"
-  },
-  "requiresPaidPlan": true
+    "en": "Listed-company Announcements",
+    "zh-CN": "上市公司公告检索"
+  }
 }

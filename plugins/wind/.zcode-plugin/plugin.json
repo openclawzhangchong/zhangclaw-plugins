@@ -1,24 +1,25 @@
 {
   "name": "wind",
-  "description": "MCP services for Wind stock, global stock, index, fund, bond, economic, and document data.",
+  "description": "Index snapshots, daily k-lines and market ranking from public endpoints, no account required.",
   "description_i18n": {
-    "en": "MCP services for Wind stock, global stock, index, fund, bond, economic, and document data.",
-    "zh-CN": "万得股票、海外股票、指数、基金、债券、宏观经济与公告研报数据 MCP 服务。"
+    "en": "Index snapshots, daily k-lines and market ranking from public endpoints, no account required.",
+    "zh-CN": "指数快照、日 K 线与市场榜单，直连公开接口，免账号。数据源非官方授权。"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
-    "name": "Z.ai",
-    "url": "https://z.ai"
+    "name": "张翀18596950010",
+    "url": "https://github.com/openclawzhangchong/zhangclaw"
   },
   "keywords": [
     "wind",
     "finance",
-    "mcp"
+    "mcp",
+    "public-data",
+    "no-auth"
   ],
-  "displayName": "Wind 万得",
+  "displayName": "市场数据（指数·K线·榜单）",
   "displayName_i18n": {
-    "en": "Wind",
-    "zh-CN": "Wind 万得"
-  },
-  "requiresPaidPlan": true
+    "en": "Market Data (Index · K-line · Ranking)",
+    "zh-CN": "市场数据（指数·K线·榜单）"
+  }
 }

@@ -1,34 +1,32 @@
-# Tianyancha (tianyancha)
+# Listed-company Announcements (tianyancha)
 
-[简体中文](./README_CN.md)
+[中文](./README_CN.md)
 
-MCP service for Tianyancha company information queries. This plugin only wraps remote MCP services; it contains no commands, skills, agents, or hooks.
+MCP search over SSE/SZSE/BSE listed-company announcements via cninfo, the designated disclosure platform, with no account required.
 
 ## Usage
 
-1. Install and enable **天眼查 / Tianyancha** in the ZCode plugin manager.
-2. Confirm that the MCP tools below are loaded in your session, then ask a natural-language question. For example:
+1. Install and enable **Listed-company Announcements** in the plugin manager.
+2. Confirm the MCP tools below are loaded in the session, then ask in natural language, e.g.:
 
-> Use Tianyancha to retrieve registration information for Kweichow Moutai Co., Ltd., with the source.
+> List the recent periodic-report announcements for 600519 with titles and PDF links.
 
-Agents should select the service from tools discovered in the current session and follow its tool schema instead of guessing tool names. The server namespace is `plugin:tianyancha:<server-key>`. This plugin has no slash commands.
+The agent should pick services from what the current session discovers and pass arguments per tool schema. Namespace: `plugin:tianyancha:announcements`. There are no slash commands.
 
-## MCP services
+## MCP tools
 
-| Server key | Gateway route identifier |
+| Tool | Returns |
 | --- | --- |
-| `tianyancha` | `finance_tianyancha` |
+| `search_announcements` | announcement title, company, code, publish date, PDF link |
 
-The `mcpServers` field in [`.mcp.json`](./.mcp.json) is authoritative. ZCode automatically discovers this file at the plugin root. All services use remote HTTP with the URL prefix `${ZCODE_BASE_URL}/api/v1/mcp/server/`.
+## Data source and limits
 
-## Authentication and permissions
+- This is **announcement search only** — no business-registration, equity-penetration or litigation data. The display name therefore drops the 「天眼查」 brand (the slug stays for existing installs).
+- Per-company filtering must go through `hisAnnouncement/query` with a resolved orgId; `fulltextSearch` silently ignores the `stock` parameter and returns unrelated companies, which the implementation avoids.
+- The upstream version required a Z.ai account; this one requires neither an account nor a plan.
+- This implementation ships in version 0.2.0; the display name now matches the actual source.
 
-A ZCode login and the applicable paid service entitlement are required (`requiresPaidPlan: true`). The host injects authentication through `auth: {type: zcode_official, provider: jwt_token}`. No vendor API key, token, or account needs to be configured.
+## Runtime requirement
 
-If tools are missing, check that the plugin is enabled. If authentication or authorization fails, check your login and plan permissions. Report query errors explicitly instead of inventing data.
+The server is a dependency-free Node ESM script (`mcp/server.mjs`) that uses only global `fetch`, so the package carries no `node_modules`; `node` must be on PATH (the same prerequisite as the `mimosa` plugin). Configuration lives in [`.mcp.json`](./.mcp.json), which ZCode discovers at the plugin root.
 
-## Scope and side effects
-
-The plugin itself runs no local programs, writes no files, and installs no dependencies. Queries are sent to remote services through the ZCode gateway; the plugin contains neither direct vendor endpoints nor credentials.
-
-Existing financial workflow plugins retain their own MCP declarations. Enabling them alongside this plugin may expose the same data source under different plugin namespaces; enable plugins as needed.

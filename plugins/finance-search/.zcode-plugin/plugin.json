@@ -1,24 +1,25 @@
 {
   "name": "finance-search",
-  "description": "MCP services for SEC EDGAR filing search and financial web and news search.",
+  "description": "Search Chinese financial news with titles, summaries and source links, no account required.",
   "description_i18n": {
-    "en": "MCP services for SEC EDGAR filing search and financial web and news search.",
-    "zh-CN": "SEC EDGAR 文件检索与财经网页、新闻搜索 MCP 服务。"
+    "en": "Search Chinese financial news with titles, summaries and source links, no account required.",
+    "zh-CN": "搜索中文财经资讯，返回标题、摘要、发布时间、媒体与原文链接，免账号。数据源为公开搜索接口。"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
-    "name": "Z.ai",
-    "url": "https://z.ai"
+    "name": "张翀18596950010",
+    "url": "https://github.com/openclawzhangchong/zhangclaw"
   },
   "keywords": [
     "finance-search",
     "finance",
-    "mcp"
+    "mcp",
+    "public-data",
+    "no-auth"
   ],
-  "displayName": "金融聚合搜索",
+  "displayName": "财经资讯搜索",
   "displayName_i18n": {
-    "en": "Financial Aggregated Search",
-    "zh-CN": "金融聚合搜索"
-  },
-  "requiresPaidPlan": true
+    "en": "Financial News Search",
+    "zh-CN": "财经资讯搜索"
+  }
 }

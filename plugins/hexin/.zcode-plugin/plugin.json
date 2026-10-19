@@ -1,24 +1,25 @@
 {
   "name": "hexin",
-  "description": "MCP services for RoyalFlush iFinD stock, global stock, index, fund, and bond data.",
+  "description": "Realtime quote snapshots for A-share, HK and US symbols from public endpoints, no account required.",
   "description_i18n": {
-    "en": "MCP services for RoyalFlush iFinD stock, global stock, index, fund, and bond data.",
-    "zh-CN": "同花顺股票、海外股票、指数、基金与债券数据 MCP 服务。"
+    "en": "Realtime quote snapshots for A-share, HK and US symbols from public endpoints, no account required.",
+    "zh-CN": "直连公开行情接口返回 A股/港股/美股实时快照，免账号。数据源非官方授权，可能延迟或限流。"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
-    "name": "Z.ai",
-    "url": "https://z.ai"
+    "name": "张翀18596950010",
+    "url": "https://github.com/openclawzhangchong/zhangclaw"
   },
   "keywords": [
     "hexin",
     "finance",
-    "mcp"
+    "mcp",
+    "public-data",
+    "no-auth"
   ],
-  "displayName": "同花顺",
+  "displayName": "公开行情（A股·港股·美股）",
   "displayName_i18n": {
-    "en": "RoyalFlush iFinD",
-    "zh-CN": "同花顺"
-  },
-  "requiresPaidPlan": true
+    "en": "Public Quotes (CN/HK/US)",
+    "zh-CN": "公开行情（A股·港股·美股）"
+  }
 }

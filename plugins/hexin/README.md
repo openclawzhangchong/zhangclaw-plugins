@@ -1,38 +1,32 @@
-# RoyalFlush iFinD (hexin)
+# Public Quotes (CN/HK/US) (hexin)
 
-[简体中文](./README_CN.md)
+[中文](./README_CN.md)
 
-MCP services for RoyalFlush iFinD stock, global stock, index, fund, and bond data. This plugin only wraps remote MCP services; it contains no commands, skills, agents, or hooks.
+Realtime quote snapshots for A-share, HK and US symbols, served locally from public endpoints with no account required. This plugin ships an MCP server only — no commands, skills, agents or hooks.
 
 ## Usage
 
-1. Install and enable **同花顺 / RoyalFlush iFinD** in the ZCode plugin manager.
-2. Confirm that the MCP tools below are loaded in your session, then ask a natural-language question. For example:
+1. Install and enable **Public Quotes (CN/HK/US)** in the plugin manager.
+2. Confirm the MCP tools below are loaded in the session, then ask in natural language, e.g.:
 
-> Use RoyalFlush iFinD to retrieve the latest available share price for Kweichow Moutai, with the data date and source.
+> Use public quotes to fetch the latest price and change for Kweichow Moutai and Tencent, and state the quote time and source.
 
-Agents should select the service from tools discovered in the current session and follow its tool schema instead of guessing tool names. The server namespace is `plugin:hexin:<server-key>`. This plugin has no slash commands.
+The agent should pick services from what the current session discovers and pass arguments per tool schema. Namespace: `plugin:hexin:quotes`. There are no slash commands.
 
-## MCP services
+## MCP tools
 
-| Server key | Gateway route identifier |
+| Tool | Returns |
 | --- | --- |
-| `hexin-stock` | `finance_hexin_stock` |
-| `hexin-global-stock` | `finance_hexin_global_stock` |
-| `hexin-index` | `finance_hexin_index` |
-| `hexin-fund` | `finance_hexin_fund` |
-| `hexin-bond` | `finance_hexin_bond` |
+| `realtime_quote` | price, prev close, open, change, change %, high/low, volume, turnover, turnover rate |
 
-The `mcpServers` field in [`.mcp.json`](./.mcp.json) is authoritative. ZCode automatically discovers this file at the plugin root. All services use remote HTTP with the URL prefix `${ZCODE_BASE_URL}/api/v1/mcp/server/`.
+## Data source and limits
 
-## Authentication and permissions
+- Data comes from the public endpoint `qt.gtimg.cn`. It is **not official iFinD data**: field semantics, latency and rate limits are decided by the endpoint owner.
+- The upstream version of this plugin pointed at the Z.ai gateway with `auth.type = zcode_official`, so every call was rejected with JSON-RPC 1006 without a Z.ai account. This version talks to the public endpoint locally — **no account, no plan**.
+- Prices are not adjusted. Every result carries `source` and `fetchedAt`; missing data is reported as an error rather than filled in.
+- This implementation ships in version 0.2.0; the display name now matches the actual source.
 
-A ZCode login and the applicable paid service entitlement are required (`requiresPaidPlan: true`). The host injects authentication through `auth: {type: zcode_official, provider: jwt_token}`. No vendor API key, token, or account needs to be configured.
+## Runtime requirement
 
-If tools are missing, check that the plugin is enabled. If authentication or authorization fails, check your login and plan permissions. Report query errors explicitly instead of inventing data.
+The server is a dependency-free Node ESM script (`mcp/server.mjs`) that uses only global `fetch`, so the package carries no `node_modules`; `node` must be on PATH (the same prerequisite as the `mimosa` plugin). Configuration lives in [`.mcp.json`](./.mcp.json), which ZCode discovers at the plugin root.
 
-## Scope and side effects
-
-The plugin itself runs no local programs, writes no files, and installs no dependencies. Queries are sent to remote services through the ZCode gateway; the plugin contains neither direct vendor endpoints nor credentials.
-
-Existing financial workflow plugins retain their own MCP declarations. Enabling them alongside this plugin may expose the same data source under different plugin namespaces; enable plugins as needed.
