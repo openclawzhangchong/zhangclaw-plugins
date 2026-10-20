@@ -1,9 +1,9 @@
 {
   "name": "example-plugin",
-  "description": "A minimal ZCode template plugin demonstrating the recommended structure: manifest, command, skill, hooks, and MCP sample config. Copy it to start a new plugin.",
+  "description": "A minimal ZhangClaw template plugin demonstrating the recommended structure: manifest, command, skill, hooks, and MCP sample config. Copy it to start a new plugin.",
   "description_i18n": {
-    "en": "A minimal ZCode template plugin demonstrating the recommended structure: manifest, command, skill, hooks, and MCP sample config. Copy it to start a new plugin.",
-    "zh-CN": "一个最小 ZCode 模板插件，演示推荐目录结构（manifest、command、skill、hooks、MCP 样例配置）。新建插件时可直接复制。"
+    "en": "A minimal ZhangClaw template plugin demonstrating the recommended structure: manifest, command, skill, hooks, and MCP sample config. Copy it to start a new plugin.",
+    "zh-CN": "一个最小智策 AI 龙虾模板插件，演示推荐目录结构（manifest、command、skill、hooks、MCP 样例配置）。新建插件时可直接复制。"
   },
   "version": "0.3.0",
   "author": {

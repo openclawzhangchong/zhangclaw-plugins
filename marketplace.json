@@ -1,9 +1,9 @@
 {
   "name": "zcode-plugins-official",
-  "description": "Official ZCode plugins marketplace: built-in and community plugins for ZCode.",
+  "description": "Official ZhangClaw plugins marketplace: built-in and community plugins for ZhangClaw.",
   "description_i18n": {
-    "en": "Official ZCode plugins marketplace: built-in and community plugins for ZCode.",
-    "zh-CN": "ZCode 官方插件市场：收录 ZCode 内置插件与社区贡献插件。"
+    "en": "Official ZhangClaw plugins marketplace: built-in and community plugins for ZhangClaw.",
+    "zh-CN": "智策 AI 龙虾官方插件市场：收录智策 AI 龙虾内置插件与社区贡献插件。"
   },
   "owner": {
     "name": "Z.ai",
@@ -41,10 +41,10 @@
         "zh-CN": "代码安全防护"
       },
       "icon": "https://openclawzhangchong.github.io/zhangclaw-plugins/assets/mimosa/icon.png",
-      "description": "Local-first security guardrails for ZCode with pre-write hooks, end-of-turn review, Git gates, commands, a security-scan skill, and an optional MCP server for sealed deep scans.",
+      "description": "Local-first security guardrails for ZhangClaw with pre-write hooks, end-of-turn review, Git gates, commands, a security-scan skill, and an optional MCP server for sealed deep scans.",
       "description_i18n": {
-        "en": "Local-first security guardrails for ZCode with pre-write hooks, end-of-turn review, Git gates, commands, a security-scan skill, and an optional MCP server for sealed deep scans.",
-        "zh-CN": "面向 ZCode 的本地优先代码安全防线，提供写入前 Hook、任务收尾复查、Git 门禁、命令、安全扫描 Skill，以及用于密封深扫的可选 MCP 服务。"
+        "en": "Local-first security guardrails for ZhangClaw with pre-write hooks, end-of-turn review, Git gates, commands, a security-scan skill, and an optional MCP server for sealed deep scans.",
+        "zh-CN": "面向智策 AI 龙虾的本地优先代码安全防线，提供写入前 Hook、任务收尾复查、Git 门禁、命令、安全扫描 Skill，以及用于密封深扫的可选 MCP 服务。"
       },
       "version": "1.0.4",
       "author": {
@@ -112,10 +112,10 @@
     {
       "name": "video2code",
       "source": "./plugins/video2code",
-      "description": "基于 ZCode 内置 Browser Use WebView 录制 WebM 并用 ffmpeg 转成 MP4/URL 复刻；无需 Playwright 或外部 Chromium",
+      "description": "基于智策 AI 龙虾内置 Browser Use WebView 录制 WebM 并用 ffmpeg 转成 MP4/URL 复刻；无需 Playwright 或外部 Chromium",
       "description_i18n": {
-        "en": "Records WebM through ZCode's built-in Browser Use WebView and converts it to MP4 with ffmpeg for video/URL replication; no Playwright or external Chromium required.",
-        "zh-CN": "基于 ZCode 内置 Browser Use WebView 录制 WebM 并用 ffmpeg 转成 MP4/URL 复刻；无需 Playwright 或外部 Chromium"
+        "en": "Records WebM through ZhangClaw's built-in Browser Use WebView and converts it to MP4 with ffmpeg for video/URL replication; no Playwright or external Chromium required.",
+        "zh-CN": "基于智策 AI 龙虾内置 Browser Use WebView 录制 WebM 并用 ffmpeg 转成 MP4/URL 复刻；无需 Playwright 或外部 Chromium"
       },
       "version": "0.6.0",
       "author": {
@@ -780,10 +780,10 @@
     {
       "name": "zcode-mcp-app-dev",
       "version": "0.1.1",
-      "description": "Develop MCP Apps for ZCode with official SDKs and a small host-extension reference.",
+      "description": "Develop MCP Apps for ZhangClaw with official SDKs and a small host-extension reference.",
       "description_i18n": {
-        "en": "Develop MCP Apps for ZCode with official SDKs and a small host-extension reference.",
-        "zh-CN": "使用官方 SDK 开发 ZCode MCP App，附宿主扩展约定与独立构建指引。"
+        "en": "Develop MCP Apps for ZhangClaw with official SDKs and a small host-extension reference.",
+        "zh-CN": "使用官方 SDK 开发智策 AI 龙虾 MCP App，附宿主扩展约定与独立构建指引。"
       },
       "author": {
         "name": "ZCode"
@@ -804,10 +804,10 @@
       },
       "version": "0.2.3",
       "source": "./plugins/blender",
-      "description": "在 ZCode 对话旁打开 Blender 场景：Agent 修改物体、材质、相机并渲染预览；面板用 Three.js 轻量浏览。",
+      "description": "在智策 AI 龙虾对话旁打开 Blender 场景：Agent 修改物体、材质、相机并渲染预览；面板用 Three.js 轻量浏览。",
       "description_i18n": {
         "en": "Edit Blender scenes with an interactive 3D panel and MCP tools.",
-        "zh-CN": "在 ZCode 对话旁打开 Blender 场景：Agent 修改物体、材质、相机并渲染预览；面板用 Three.js 轻量浏览。"
+        "zh-CN": "在智策 AI 龙虾对话旁打开 Blender 场景：Agent 修改物体、材质、相机并渲染预览；面板用 Three.js 轻量浏览。"
       },
       "category": "productivity",
       "author": {
@@ -873,10 +873,10 @@
         "en": "PhotoCraft",
         "zh-CN": "PhotoCraft"
       },
-      "description": "PhotoCraft image editing in a ZCode panel, with workspace file opening and host-mediated exports.",
+      "description": "PhotoCraft image editing in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
       "description_i18n": {
-        "en": "PhotoCraft image editing in a ZCode panel, with workspace file opening and host-mediated exports.",
-        "zh-CN": "在 ZCode 面板中使用 PhotoCraft 进行图片编辑，支持打开工作区文件和通过宿主保存导出。"
+        "en": "PhotoCraft image editing in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
+        "zh-CN": "在智策 AI 龙虾面板中使用 PhotoCraft 进行图片编辑，支持打开工作区文件和通过宿主保存导出。"
       },
       "version": "0.2.3",
       "author": {
@@ -902,10 +902,10 @@
         "en": "VectorCraft",
         "zh-CN": "VectorCraft"
       },
-      "description": "VectorCraft vector illustration in a ZCode panel, with workspace file opening and host-mediated exports.",
+      "description": "VectorCraft vector illustration in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
       "description_i18n": {
-        "en": "VectorCraft vector illustration in a ZCode panel, with workspace file opening and host-mediated exports.",
-        "zh-CN": "在 ZCode 面板中使用 VectorCraft 进行矢量绘图，支持打开工作区文件和通过宿主保存导出。"
+        "en": "VectorCraft vector illustration in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
+        "zh-CN": "在智策 AI 龙虾面板中使用 VectorCraft 进行矢量绘图，支持打开工作区文件和通过宿主保存导出。"
       },
       "version": "0.2.3",
       "author": {
@@ -931,10 +931,10 @@
         "en": "PdfCraft",
         "zh-CN": "PdfCraft"
       },
-      "description": "PdfCraft PDF editing in a ZCode panel, with workspace file opening and host-mediated exports.",
+      "description": "PdfCraft PDF editing in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
       "description_i18n": {
-        "en": "PdfCraft PDF editing in a ZCode panel, with workspace file opening and host-mediated exports.",
-        "zh-CN": "在 ZCode 面板中使用 PdfCraft 进行PDF 编辑，支持打开工作区文件和通过宿主保存导出。"
+        "en": "PdfCraft PDF editing in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
+        "zh-CN": "在智策 AI 龙虾面板中使用 PdfCraft 进行PDF 编辑，支持打开工作区文件和通过宿主保存导出。"
       },
       "version": "0.2.3",
       "author": {
@@ -960,10 +960,10 @@
         "en": "DesignCraft",
         "zh-CN": "DesignCraft"
       },
-      "description": "DesignCraft page layout in a ZCode panel, with workspace file opening and host-mediated exports.",
+      "description": "DesignCraft page layout in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
       "description_i18n": {
-        "en": "DesignCraft page layout in a ZCode panel, with workspace file opening and host-mediated exports.",
-        "zh-CN": "在 ZCode 面板中使用 DesignCraft 进行页面排版，支持打开工作区文件和通过宿主保存导出。"
+        "en": "DesignCraft page layout in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
+        "zh-CN": "在智策 AI 龙虾面板中使用 DesignCraft 进行页面排版，支持打开工作区文件和通过宿主保存导出。"
       },
       "version": "0.2.3",
       "author": {
@@ -989,10 +989,10 @@
         "en": "WordCraft",
         "zh-CN": "WordCraft"
       },
-      "description": "WordCraft word processing in a ZCode panel, with workspace file opening and host-mediated exports.",
+      "description": "WordCraft word processing in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
       "description_i18n": {
-        "en": "WordCraft word processing in a ZCode panel, with workspace file opening and host-mediated exports.",
-        "zh-CN": "在 ZCode 面板中使用 WordCraft 进行文字处理，支持打开工作区文件和通过宿主保存导出。"
+        "en": "WordCraft word processing in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
+        "zh-CN": "在智策 AI 龙虾面板中使用 WordCraft 进行文字处理，支持打开工作区文件和通过宿主保存导出。"
       },
       "version": "0.2.3",
       "author": {
@@ -1018,10 +1018,10 @@
         "en": "GridCraft",
         "zh-CN": "GridCraft"
       },
-      "description": "GridCraft spreadsheets in a ZCode panel, with workspace file opening and host-mediated exports.",
+      "description": "GridCraft spreadsheets in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
       "description_i18n": {
-        "en": "GridCraft spreadsheets in a ZCode panel, with workspace file opening and host-mediated exports.",
-        "zh-CN": "在 ZCode 面板中使用 GridCraft 进行电子表格，支持打开工作区文件和通过宿主保存导出。"
+        "en": "GridCraft spreadsheets in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
+        "zh-CN": "在智策 AI 龙虾面板中使用 GridCraft 进行电子表格，支持打开工作区文件和通过宿主保存导出。"
       },
       "version": "0.2.3",
       "author": {
@@ -1047,10 +1047,10 @@
         "en": "DeckCraft",
         "zh-CN": "DeckCraft"
       },
-      "description": "DeckCraft presentations in a ZCode panel, with workspace file opening and host-mediated exports.",
+      "description": "DeckCraft presentations in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
       "description_i18n": {
-        "en": "DeckCraft presentations in a ZCode panel, with workspace file opening and host-mediated exports.",
-        "zh-CN": "在 ZCode 面板中使用 DeckCraft 进行演示文稿，支持打开工作区文件和通过宿主保存导出。"
+        "en": "DeckCraft presentations in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
+        "zh-CN": "在智策 AI 龙虾面板中使用 DeckCraft 进行演示文稿，支持打开工作区文件和通过宿主保存导出。"
       },
       "version": "0.2.3",
       "author": {
@@ -1076,10 +1076,10 @@
         "en": "CADCraft",
         "zh-CN": "CADCraft"
       },
-      "description": "CADCraft CAD drafting in a ZCode panel, with workspace file opening and host-mediated exports.",
+      "description": "CADCraft CAD drafting in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
       "description_i18n": {
-        "en": "CADCraft CAD drafting in a ZCode panel, with workspace file opening and host-mediated exports.",
-        "zh-CN": "在 ZCode 面板中使用 CADCraft 进行CAD 绘图，支持打开工作区文件和通过宿主保存导出。"
+        "en": "CADCraft CAD drafting in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
+        "zh-CN": "在智策 AI 龙虾面板中使用 CADCraft 进行CAD 绘图，支持打开工作区文件和通过宿主保存导出。"
       },
       "version": "0.2.3",
       "author": {
@@ -1105,10 +1105,10 @@
         "en": "SoundCraft",
         "zh-CN": "SoundCraft"
       },
-      "description": "SoundCraft audio editing in a ZCode panel, with workspace file opening and host-mediated exports.",
+      "description": "SoundCraft audio editing in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
       "description_i18n": {
-        "en": "SoundCraft audio editing in a ZCode panel, with workspace file opening and host-mediated exports.",
-        "zh-CN": "在 ZCode 面板中使用 SoundCraft 进行音频编辑，支持打开工作区文件和通过宿主保存导出。"
+        "en": "SoundCraft audio editing in a ZhangClaw panel, with workspace file opening and host-mediated exports.",
+        "zh-CN": "在智策 AI 龙虾面板中使用 SoundCraft 进行音频编辑，支持打开工作区文件和通过宿主保存导出。"
       },
       "version": "0.2.3",
       "author": {

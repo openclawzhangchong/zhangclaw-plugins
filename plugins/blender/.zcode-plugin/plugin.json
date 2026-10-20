@@ -1,7 +1,7 @@
 {
   "name": "blender",
   "version": "0.2.3",
-  "description": "在 ZCode 对话旁打开 Blender 场景：Agent 修改物体、材质、相机并渲染预览；面板用 Three.js 轻量浏览。",
+  "description": "在智策 AI 龙虾对话旁打开 Blender 场景：Agent 修改物体、材质、相机并渲染预览；面板用 Three.js 轻量浏览。",
   "skills": "skills",
   "author": {
     "name": "ZCode"
@@ -11,7 +11,9 @@
     "blender": {
       "type": "stdio",
       "command": "node",
-      "args": ["${ZCODE_PLUGIN_ROOT}/dist/server.mjs"],
+      "args": [
+        "${ZCODE_PLUGIN_ROOT}/dist/server.mjs"
+      ],
       "cwd": "${ZCODE_PROJECT_DIR}",
       "env": {
         "ZCODE_WORKSPACE_ROOT": "${ZCODE_PROJECT_DIR}",
@@ -65,6 +67,6 @@
   },
   "description_i18n": {
     "en": "Edit Blender scenes with an interactive 3D panel and MCP tools.",
-    "zh-CN": "在 ZCode 对话旁打开 Blender 场景：Agent 修改物体、材质、相机并渲染预览；面板用 Three.js 轻量浏览。"
+    "zh-CN": "在智策 AI 龙虾对话旁打开 Blender 场景：Agent 修改物体、材质、相机并渲染预览；面板用 Three.js 轻量浏览。"
   }
 }
